@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevQuizzer - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <h1>DevQuizzer</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="quizzes.html">Quizzes</a>
+      <a href="form.html">Sign Up</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Sharpen Your Coding Skills With Fun Quizzes!</h1>
+    <p>Practice coding, improve logic, and prepare for interviews interactively.</p>
+    <a href="firstquiz.html" class="btn">🚀 Start Your First Quiz</a>
+  </section>
+
+  <section class="section">
+    <h2>Platform Features</h2>
+    <div class="features-grid">
+      <div id="box-1" class="box">🧠 Daily Coding Quizzes</div>
+      <div id="box-2" class="box">⏱Timed Challenges</div>
+      <div id="box-3" class="box">📚 Topic-wise MCQs</div>
+      <div id="box-4" class="box"> 🏆 Leaderboards & Progress Tracking</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Choose Your Track</h2>
+    <div class="track-boxes">
+      <div class="category-box">💻Python</div>
+      <div class="category-box">🌐Web Development</div>
+      <div class="category-box">📊Data Structures</div>
+      <div class="category-box">s🔢Algorithms</div>
+    </div>
+  </section>
+
+  
+  <section class="section">
+    <h2>What is Coding?</h2>
+    <p>
+      Coding (or programming) is the process of writing instructions that a computer can understand and execute.
+    </p>
+
+    <h3> Simple Definition:</h3>
+    <p>Coding is telling a computer what to do, step-by-step, using a language it understands.</p>
+
+    <h3>🔧 What Coding Is Used For:</h3>
+    <ul>
+      <li>Building websites and apps</li>
+      <li>Creating games</li>
+      <li>Automating tasks</li>
+      <li>Controlling robots or IoT devices</li>
+      <li>Processing data and machine learning</li>
+    </ul>
+
+    <h3> Example in Python:</h3>
+    <pre><code>print("Hello, world!")</code></pre>
+  </section>
+
+  <section class="section">
+    <h2>📅 Upcoming Coding Exam</h2>
+    <p><strong>Subject:</strong> Coding</p>
+    <p><strong>Date:</strong> <time datetime="2025-06-10">June 10, 2025</time></p>
+    <p><strong>Time:</strong> 9:00 AM to 12:00 PM</p>
+    <p><strong>Location:</strong> Computer Center, Main Building</p>
+    <p><strong>Duration:</strong> 90 min</p>
+  </section>
+
+  <section class="section">
+    <h2>Why Use DevQuizzer?</h2>
+    <ol>
+      <li>Reinforce concepts with quizzes</li>
+      <li>Prep for competitive programming</li>
+      <li>Practice real-world interview questions</li>
+      <li>Improve retention through repetition</li>
+      <li>Track speed and accuracy</li>
+      <li>Various question formats</li>
+      <li>Focus on practical learning</li>
+    </ol>
+
+    <h3> What You Get:</h3>
+    <ul>
+      <li>Clear concept understanding</li>
+      <li>Instant feedback</li>
+      <li>Quizzes for all levels</li>
+      <li>Daily challenges</li>
+      <li>Interview prep support</li>
+      <li>Leaderboards for motivation</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>📊 Platform Stats</h2>
+    <div class="stats-grid">
+      <div class="stat-box"><strong>25,000+</strong><br>Users Enrolled</div>
+      <div class="stat-box"><strong>500+</strong><br>Daily Quizzes Attempted</div>
+      <div class="stat-box"><strong>95%</strong><br>Success Rate</div>
+      <div class="stat-box"><strong>150+</strong><br>Topics Covered</div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 DevQuizzer. developed by Juhi Chaudhary .</p>
+    <p><a href="index.html">About</a> | <a href="#">Privacy Policy</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+ <script>
+  const featureBoxes = document.querySelectorAll('.features-grid .box');
+
+  featureBoxes.forEach((box, index) => {
+   
+    box.innerHTML = `${box.innerText.trim()}`;
+
+    box.addEventListener('click', () => {
+
+      box.classList.toggle('clicked');
+
+      box.style.backgroundColor = box.classList.contains('clicked') ? '#ccf2ff' : '#e6f7ff';
+      box.style.transform = 'scale(1.1)';
+
+      
+      setTimeout(() => {
+        box.style.transform = 'scale(1)';
+      }, 200);
+    });
+  });
+</script>
+
+  
+</body>
+</html>
+
+

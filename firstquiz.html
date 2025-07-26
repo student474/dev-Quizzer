@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coding Quiz - DevQuizzer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0066ff;
+    }
+
+    .question {
+      background: #ffffff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .question h3 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .btn-submit {
+      display: block;
+      background-color: #0066ff;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 30px auto;
+      transition: background 0.3s ease;
+    }
+
+    .btn-submit:hover {
+      background-color: #004ec2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 DevQuizzer - Coding Quiz</h1>
+
+    <form action="firstquiz.php" method="post">
+      <!-- Question 1 -->
+      <div class="question">
+        <h3>1. What does HTML stand for?</h3>
+        <label><input type="radio" name="q1" value="HyperText Markup Language"> HyperText Markup Language</label>
+        <label><input type="radio" name="q1" value="Hyper Transfer Markup Language"> Hyper Transfer Markup Language</label>
+        <label><input type="radio" name="q1" value="HighText Machine Language"> HighText Machine Language</label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <h3>2. Which tag is used to create a hyperlink in HTML?</h3>
+        <label><input type="radio" name="q2" value="<link>"> &lt;link&gt;</label>
+        <label><input type="radio" name="q2" value="<a>"> &lt;a&gt;</label>
+        <label><input type="radio" name="q2" value="<href>"> &lt;href&gt;</label>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <h3>3. What is the correct syntax to link a CSS file?</h3>
+        <label><input type="radio" name="q3" value='<style src="style.css">'> &lt;style src="style.css"&gt;</label>
+        <label><input type="radio" name="q3" value='<link rel="stylesheet" href="style.css">'> &lt;link rel="stylesheet" href="style.css"&gt;</label>
+        <label><input type="radio" name="q3" value='<css link="style.css">'> &lt;css link="style.css"&gt;</label>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question">
+        <h3>4. What does CSS stand for?</h3>
+        <label><input type="radio" name="q4" value="Creative Style Sheet"> Creative Style Sheet</label>
+        <label><input type="radio" name="q4" value="Cascading Style Sheets"> Cascading Style Sheets</label>
+        <label><input type="radio" name="q4" value="Computer Style Sheets"> Computer Style Sheets</label>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question">
+        <h3>5. Which HTML tag is used to define an internal style sheet?</h3>
+        <label><input type="radio" name="q5" value="<script>"> &lt;script&gt;</label>
+        <label><input type="radio" name="q5" value="<style>"> &lt;style&gt;</label>
+        <label><input type="radio" name="q5" value="<css>"> &lt;css&gt;</label>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="question">
+        <h3>6. Inside which HTML element do we put JavaScript code?</h3>
+        <label><input type="radio" name="q6" value="<javascript>"> &lt;javascript&gt;</label>
+        <label><input type="radio" name="q6" value="<script>"> &lt;script&gt;</label>
+        <label><input type="radio" name="q6" value="<code>"> &lt;code&gt;</label>
+      </div>
+
+      <!-- Question 7 -->
+      <div class="question">
+        <h3>7. How do you write "Hello World" in an alert box in JS?</h3>
+        <label><input type="radio" name="q7" value='msg("Hello World");'> msg("Hello World");</label>
+        <label><input type="radio" name="q7" value='alert("Hello World");'> alert("Hello World");</label>
+        <label><input type="radio" name="q7" value='msgBox("Hello World");'> msgBox("Hello World");</label>
+      </div>
+
+      <!-- Question 8 -->
+      <div class="question">
+        <h3>8. How do you add a comment in HTML?</h3>
+        <label><input type="radio" name="q8" value="// This is a comment"> // This is a comment</label>
+        <label><input type="radio" name="q8" value="<!-- This is a comment -->"> &lt;!-- This is a comment --&gt;</label>
+        <label><input type="radio" name="q8" value="# This is a comment"> # This is a comment</label>
+      </div>
+
+      <!-- Question 9 -->
+      <div class="question">
+        <h3>9. How to select an element with id="demo" in CSS?</h3>
+        <label><input type="radio" name="q9" value=".demo"> .demo</label>
+        <label><input type="radio" name="q9" value="demo"> demo</label>
+        <label><input type="radio" name="q9" value="#demo"> #demo</label>
+      </div>
+
+      <!-- Question 10 -->
+      <div class="question">
+        <h3>10. Which symbol is used for comments in CSS?</h3>
+        <label><input type="radio" name="q10" value="// comment //"> // comment //</label>
+        <label><input type="radio" name="q10" value="# comment"> # comment</label>
+        <label><input type="radio" name="q10" value="/* comment */"> /* comment */</label>
+      </div>
+
+      <!-- Question 11 -->
+      <div class="question">
+        <h3>11. Which method is used to display an alert box in JavaScript?</h3>
+        <label><input type="radio" name="q11" value="alert()"> alert()</label>
+        <label><input type="radio" name="q11" value="prompt()"> prompt()</label>
+        <label><input type="radio" name="q11" value="confirm()"> confirm()</label>
+      </div>
+
+      <button class="btn-submit" type="submit">Submit Quiz</button>
+    </form>
+  </div>
+</body>
+</html>
